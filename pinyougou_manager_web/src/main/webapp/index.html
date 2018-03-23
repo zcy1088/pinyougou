@@ -1,0 +1,131 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angularjs</title>
+    <script src="angular/angular.min.js"></script>
+
+    <script>
+        //定义myAPP模块
+        var app=angular.module('myapp',[]);
+        //定义一个控制器
+        app.controller('myController',function ($scope) {
+            $scope.add=function () {
+                return parseInt($scope.x)+parseInt($scope.y);
+            }
+        });
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="myController">
+   x:<input ng-model="x" >
+    X:<input ng-model="y">
+    运行结果:{{add()}}
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件指令</title>
+    <script src="angular/angular.min.js"></script>
+
+    <script>
+        var app=angular.module('myApp',[])
+        app.controller('myController',function($scope) {
+            $scope.add=function () {
+                $scope.z=parseInt($scope.x)+parseInt($scope.y);
+            }
+        });
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+X:<input ng-model="x">
+Y:<input ng-model="y">
+<button ng-click="add()">运算</button>
+结果:{{z}}
+</body>
+</html>-->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环数组</title>
+    <script src="angular/angular.min.js"></script>
+
+</head>
+<script>
+    var app=angular.module('myApp',[]);
+    app.controller('myController',function ($scope) {
+        $scope.list=[12,34,21,19]
+
+    });
+</script>
+<body ng-app="myApp" ng-controller="myController" >
+<table>
+    <tr ng-repeat="x in list">
+        <td>{{x}}</td>
+    </tr>
+</table>
+</body>
+</html>-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环对象数组</title>
+    <script src="angular/angular.min.js"></script>
+
+</head>
+<script>
+    var app=angular.module('myApp',[]);
+    app.controller('myController',function ($scope) {
+        $scope.list=[
+            {name:'张三',shuxue:100,yuwen:93},
+            {name:'李四',shuxue:88,yuwen:87},
+            {name:'王五',shuxue:77,yuwen:56}
+        ]
+    })
+</script>
+<body ng-app="myApp" ng-controller="myController" >
+    <table>
+        <tr>
+            <td>姓名</td>
+            <td>数学</td>
+            <td>语文</td>
+        </tr>
+
+        <tr ng-repeat="entity in list">
+            <td>{{entity.name}}</td>
+            <td>{{entity.shuxue}}</td>
+            <td>{{entity.yuwen}}</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置服务</title>
+    <script src="angular/angular.min.js"></script>
+
+</head>
+<script>
+
+</script>
+<body >
+<table>
+
+</table>
+
+</body>
+</html>
+
